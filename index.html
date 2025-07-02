@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochrome Coffee - Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .hero-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .price-tag {
+            background-color: #333;
+            color: white;
+        }
+        
+        .active-category {
+            border-bottom: 2px solid #333;
+            font-weight: 600;
+        }
+        
+        .cart-notification {
+            animation: pop 0.5s ease-out;
+        }
+        
+        @keyframes pop {
+            0% { transform: scale(0); }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="hero-image">
+        <img src="banner.png" alt="Interior monokrom cafe dengan mural hitam putih dan barista sedang membuat kopi" class="w-full h-full object-cover">
+        <div class="absolute z-10 bottom-0 left-0 w-full p-6 text-white">
+            <h1 class="text-4xl font-bold">TERAZ</h1>
+            <p class="text-xl">COFFEE ◯ SPACE</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-6">
+        <!-- Categories -->
+        <div class="flex overflow-x-auto pb-2 mb-6 scrollbar-hide space-x-4">
+            <button class="px-4 py-2 whitespace-nowrap active-category" data-filter="all">All Menu</button>
+            <button class="px-4 py-2 whitespace-nowrap" data-filter="coffee">Coffee</button>
+            <button class="px-4 py-2 whitespace-nowrap" data-filter="noncoffee">Non-Coffee</button>
+            <button class="px-4 py-2 whitespace-nowrap" data-filter="food">Food</button>
+        </div>
+
+        <!-- Menu List -->
+        <div class="grid grid-cols-1 gap-4 mb-20">
+            <!-- Coffee Item 1 -->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="kj.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kopi jadul</h3>
+                            <p class="text-sm text-gray-600">Single origin Ethiopia, medium roast</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Item 2 -->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="senja.png" alt="Latte coffee with beautiful fern latte art in ceramic cup" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kopi senja</h3>
+                            <p class="text-sm text-gray-600">Espresso with steamed milk</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 30K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Item 3 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="aren.png" alt="Kopi Aren" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kopi Aren</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+ <!-- Non coffe item -->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Aurora</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pastry Item -->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="katsu.png" alt="Rice Bowl With Chiken Katsug" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Katsu</h3>
+                            <p class="text-sm text-gray-600">Rice Bowl With Chiken Katsu</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 28K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <script>
+        // Simple JS for cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addButtons = document.querySelectorAll('.menu-item button');
+            const cartNotification = document.querySelector('.cart-notification');
+            let cartCount = 0;
+            
+            addButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartCount++;
+                    cartNotification.textContent = cartCount;
+                    cartNotification.classList.add('cart-notification');
+                    
+                    // Reset animation
+                    setTimeout(() => {
+                        cartNotification.classList.remove('cart-notification');
+                        void cartNotification.offsetWidth; // Trigger reflow
+                        cartNotification.classList.add('cart-notification');
+                    }, 10);
+                });
+            });
+            
+            // Category switching - functional implementation
+            const categoryButtons = document.querySelectorAll('.flex button');
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            function filterMenu(category) {
+                menuItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    categoryButtons.forEach(btn => btn.classList.remove('active-category'));
+                    this.classList.add('active-category');
+                    
+                    // Get category from button text
+                    let category = this.textContent.toLowerCase().replace(' ', '-');
+                    if(category === 'all-menu') category = 'all';
+                    if(category === 'non-coffee') category = 'noncoffee'; // adjust if you add non-coffee items
+                    
+                    filterMenu(category);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
