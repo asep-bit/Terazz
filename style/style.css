@@ -90,3 +90,24 @@
 html {
     scroll-behavior: smooth;
   }
+  .button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.shopee-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shopee-button:hover {
+  background-color: #d44126;
+  color: #ffffff;
+}
