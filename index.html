@@ -9,12 +9,14 @@
 </head>
 <body class="min-h-screen">
     <div class="hero-image">
-        <img src="img/banner.png" alt="Interior monokrom cafe dengan mural hitam putih dan barista sedang membuat kopi" class="w-full h-full object-cover">
-        <div class="absolute z-10 bottom-0 left-0 w-full p-6 text-white">
-            <h1 class="text-4xl font-bold">TERAZ</h1>
-            <p class="text-xl">COFFEE ◯ SPACE</p>
-        </div>
+    <img src="img/banner.png" alt="Interior monokrom cafe dengan mural hitam putih dan barista sedang membuat kopi" class="w-full h-full object-cover">
+    <div class="absolute z-10 bottom-0 left-0 w-full p-6 text-white">
+        <h1 class="text-4xl font-bold">TERAZ</h1>
+        <p class="text-xl">COFFEE ◯ SPACE</p>
+        <p class="text-sm">Jam Operasional: 08.00 – 21.00 (Setiap Hari)</p>
     </div>
+</div>
+
 
     <div class="container mx-auto px-4 py-6">
         <!-- Categories -->
@@ -23,6 +25,7 @@
             <button class="px-4 py-2 whitespace-nowrap" data-filter="coffee">Coffee</button>
             <button class="px-4 py-2 whitespace-nowrap" data-filter="noncoffee">Non-Coffee</button>
             <button class="px-4 py-2 whitespace-nowrap" data-filter="food">Food</button>
+            <button class="px-4 py-2 whitespace-nowrap" data-filter="tea">Tea</button>
         </div>
         
 <input type="text" id="searchInput" placeholder="Cari menu...">
@@ -31,7 +34,7 @@
         <!-- Menu List -->
         <div class="grid grid-cols-1 gap-4 mb-20">
             <!-- Coffee Item 1 -->
-            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffe">
                 <div class="flex">
                     <div class="w-24 h-24">
                         <img src="img/kj.png">
@@ -61,7 +64,7 @@
                             <p class="text-sm text-gray-600">Espresso with steamed milk</p>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 30K</span>
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
                         </div>
                     </div>
                 </div>
@@ -85,6 +88,96 @@
                 </div>
             </div>
 
+            <!-- Coffee Item 4 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aren.png" alt="Kopi Hujan" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kopi Hujan</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 18K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Item 5 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aren.png" alt="Butterscotch Latte" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Butterscotch Latte</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 18K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Coffee Item 6 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aren.png" alt="Kopi Teras " class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kopi Teras</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Coffee Item 7 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aren.png" alt="Americano Lemonade" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Americano Lemonade</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 13K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Coffee Item 8 -->
+           <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="coffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aren.png" alt="Espresso" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Espresso</h3>
+                            <p class="text-sm text-gray-600">Slow brewed for 18 hours</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 8K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
  <!-- Non coffe item -->
             <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
@@ -98,6 +191,63 @@
                             <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
                         </div>
                         <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non coffe item 2-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Milky Way</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Non coffe item 3-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Hindia</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non coffe item 4-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Cokelat Teras </h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
                             <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
                             
                         </div>
@@ -105,7 +255,332 @@
                 </div>
             </div>
 
-            <!-- Pastry Item -->
+            <!-- Non coffe item 5-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="noncoffee">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Air Mineral</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 6K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Tea item 1-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Matcha </h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea item 2-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Thai Tea </h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea item 3-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Leci Tea</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea item 4-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Mango Tea</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Tea item 5-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Lemon Tea</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 <!-- Tea item 6-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="tea">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Es Teh</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 6K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea item 1-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Pizza Mie</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 18K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Food Item 2-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Naslor</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+<!-- Food Item 3-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Mie Telor</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 12K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 4-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Mie Polos</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 7K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Food Item 5-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Nasi</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 5K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 6-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Mix Platter </h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 20K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Food Item 7-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Kentang Goreng</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 15K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!-- Food Item 8-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Roti Jadul</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 9-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Sosis Bakar</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 10K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 10-->
+            <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
+                <div class="flex">
+                    <div class="w-24 h-24">
+                        <img src="img/aurora.png">
+                    </div>
+                    <div class="flex-1 p-3 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-bold text-lg">Tahu Bakso</h3>
+                            <p class="text-sm text-gray-600">Nanas,Lemon,Bunga Telang</p>
+                        </div>
+                        <div class="flex justify-between items-center mt-2">
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 6K</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Item 11 -->
             <div class="menu-item bg-white rounded-lg overflow-hidden shadow-sm" data-category="food">
                 <div class="flex">
                     <div class="w-24 h-24">
@@ -117,7 +592,7 @@
                             <p class="text-sm text-gray-600">Rice Bowl With Chiken Katsu</p>
                         </div>
                         <div class="flex justify-between items-center mt-2">
-                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 28K</span>
+                            <span class="price-tag px-3 py-1 text-sm rounded-full">IDR 20K</span>
                         </div>
                     </div>
                 </div>
@@ -128,6 +603,18 @@
   
 
 <script src="script/script.js"></script>
+
+<footer class="bg-black text-white mt-12 border-t border-white">
+  <div class="max-w-6xl mx-auto px-6 py-6">
+    <div class="text-sm space-y-1">
+      <p><strong>IG:</strong> <a href="https://instagram.com/terazcoffee__" class="text-blue-400 hover:underline" target="_blank">@terazcoffee__</a></p>
+      <p><strong>WA:</strong> <a href="https://wa.me/6287734817665" class="text-blue-400 hover:underline" target="_blank">0877-3481-7665</a></p>
+      <p><strong>Alamat:</strong> Puri Nirwana Estate Blok H/16, Cibinong, Kab. Bogor</p>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
 
